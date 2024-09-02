@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notifications\Notifications.csproj" />
+    <ProjectReference Include="..\NotificationService\NotificationService.csproj" />
+    <ProjectReference Include="..\EmailNotification\EmailNotification.csproj" />
+    <ProjectReference Include="..\SmsNotification\SmsNotification.csproj" />
+  </ItemGroup>
+</Project>

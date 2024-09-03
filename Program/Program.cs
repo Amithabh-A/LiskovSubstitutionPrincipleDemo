@@ -1,4 +1,17 @@
-﻿using Notifications;
+﻿namespace Program;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+
+
+/*
+
+using Notifications;
 using EmailNotification;
 using SmsNotification; 
 using NotificationService;
@@ -15,7 +28,9 @@ public class Program
         NotificationService.NotificationService EmailService = new NotificationService.NotificationService(_emailInstance);
         NotificationService.NotificationService SmsService = new NotificationService.NotificationService(_smsInstance);
 
-        EmailService.Notify("Hello via Email!"); 
+        EmailService.Notify("Hello via Email!");
         SmsService.Notify("Hello via Sms!");
     }
 }
+
+ */

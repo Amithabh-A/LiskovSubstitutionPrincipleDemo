@@ -1,12 +1,24 @@
-﻿using Notifications;
+﻿/******************************************************************************
+* Filename    = SmsNotification.cs
+*
+* Author      = Amithabh A
+*
+* Product     = Notifications
+* 
+* Project     = SmsNotification
+*
+* Description = Implements Sms Notifications
+*****************************************************************************/
+
+using Notifications;
 using System.Text.RegularExpressions; 
-namespace SmsNotification;
+namespace SmsNamespace;
 
 public class SmsNotification : INotification
 {
-    string _phoneNumber;
+    string? _phoneNumber;
 
-    public SmsNotification(string phoneNumber)
+    public SmsNotification(string? phoneNumber)
     {
         _phoneNumber = phoneNumber; 
     }
@@ -23,6 +35,7 @@ public class SmsNotification : INotification
         // to check its validity
         string pattern = @"^\+?\d{1,4} \d+$";
         Regex regex = new Regex(pattern);
+
         if(regex.IsMatch(_phoneNumber))
         {
             Console.WriteLine($"Sms sent from {_phoneNumber} : {message}");

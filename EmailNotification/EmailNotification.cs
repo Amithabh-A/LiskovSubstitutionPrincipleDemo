@@ -1,4 +1,16 @@
-﻿using Notifications;
+﻿/******************************************************************************
+* Filename    = EmailNotification.cs
+*
+* Author      = Amithabh A
+*
+* Product     = Notifications
+* 
+* Project     = EmailNotification
+*
+* Description = Implements Email Notifications
+*****************************************************************************/
+
+using Notifications;
 using System.Text.RegularExpressions; 
 namespace EmailNotification;
 
@@ -21,12 +33,13 @@ public class EmailNotification : INotification
 
         // regular expression to validate an email address
         string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-        Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);   
-        if(regex.IsMatch(_emailId))
-        {
+        Regex regex = new Regex(pattern, RegexOptions.IgnoreCase);
+
+        if(regex.IsMatch(_emailId))     
+        {       
             Console.WriteLine($"Email from {_emailId} : {message}");   
             return true; 
-        }
+        }       
         
         return false; 
     }

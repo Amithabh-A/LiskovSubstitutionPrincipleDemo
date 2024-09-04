@@ -1,14 +1,27 @@
-﻿using System;
+﻿/******************************************************************************
+* Filename    = INotification.cs
+*
+* Author      = Amithabh A
+*
+* Product     = Notifications
+* 
+* Project     = Notifications
+*
+* Description = Interface for Email and SMS Notifications
+*****************************************************************************/
+
+using System;
 namespace Notifications
 {
+
 	public interface INotification
 	{
-		/// <summary>
-		/// Send() returns message status. If status is true, message has written on terminal, and vice versa. 
-		/// </summary>
-		/// <param name="message"></param>
-		/// <returns></returns>
-		bool Send(string message); 
+        /// <summary>
+        /// Returns message status. If status is true, message has written on terminal, and vice versa. 
+        /// </summary>
+        /// <param name="message"> message to be passed(printed on the console) </param>
+        /// <returns> message status </returns>
+        bool Send(string message); 
 	}
 }
 

@@ -1,8 +1,20 @@
-﻿using SmsNamespace; 
+﻿/******************************************************************************
+* Filename    = SmsNotificationTests.cs
+*
+* Author      = Amithabh A
+*
+* Product     = Notifications
+* 
+* Project     = SmsNotificationTests
+*
+* Description = Tests Sms Notifications
+*****************************************************************************/
+
+using SmsNamespace; 
 namespace SmsNotificationTests;
 
 [TestClass]
-public class UnitTest1
+public class SmsNotificationTests
 {
     [TestMethod]
     public void TestValidPhoneNumber()

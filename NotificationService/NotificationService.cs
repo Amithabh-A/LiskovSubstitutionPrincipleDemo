@@ -4,10 +4,10 @@ namespace NotificationService;
 
 public class NotificationService
 {
-    private readonly INotification _notification; 
+    private readonly INotification _notification;
     public NotificationService(INotification notification)
     {
-        _notification = notification; 
+        _notification = notification;
     }
 
     public void Notify(string message)

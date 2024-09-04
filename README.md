@@ -10,9 +10,9 @@ In simple words,
 ## Design
 This project defines a Notifications Interface which have `Send()`. Two classes inherited from above, namely `EmailNotification` and `SmsNotification` implement the functions. 
 
-![Module & Class diagram][def]
+![Class & Module diagram][def]
 
-[def]: ModuleAndClassDiagram.jpg
+[def]: ClassAndModuleDiagram.jpg
 
 ## Environment
 The project builds and runs with Visual Studio Community 2022 when the required workloads are installed.
